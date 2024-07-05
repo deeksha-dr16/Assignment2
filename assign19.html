@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Bootstrap Responsive Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assign19.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Customized Bootstrap Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Interests</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="programming" value="programming">
+                    <label class="form-check-label" for="programming">Programming</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="music" value="music">
+                    <label class="form-check-label" for="music">Music</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sports" value="sports">
+                    <label class="form-check-label" for="sports">Sports</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

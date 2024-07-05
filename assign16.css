@@ -1,0 +1,134 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px); /* Adjust for header and footer height */
+}
+
+/* Button styles */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:active {
+    background-color: #3e8e41;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* List styles */
+.list-container {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: translateX(5px);
+}
+
+/* Box styles */
+.box-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #f44336;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover::before {
+    opacity: 1;
+}
+
+.box::after {
+    content: 'Hover to See Effect';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover::after {
+    opacity: 1;
+}

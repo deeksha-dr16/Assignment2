@@ -1,0 +1,35 @@
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Class selector: styling elements with class "highlight" */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ID selector: styling element with id "main-header" */
+#main-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Attribute selector: styling links with specific href attribute */
+a[href="#section2"] {
+    color: red;
+}
+
+/* Pseudo-class selector: styling links on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-element selector: styling the first letter of each paragraph */
+p::first-letter {
+    font-size: 2em;
+    color: #ff0000;
+}

@@ -1,0 +1,104 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    gap: 10px;
+}
+
+/* Section styles */
+section {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Extra section default visibility */
+.extra {
+    display: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Mobile styles */
+@media (min-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .extra {
+        display: none;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar, .content {
+        flex: 1;
+    }
+
+    .extra {
+        display: block;
+        flex: 0.5;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar, .content, .extra {
+        flex: 1;
+    }
+
+    .extra {
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Example</title>
+    <link rel="stylesheet" href="assign13.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Transitions Example</h1>
+    </header>
+    <main class="content">
+        <button id="btnColor">Change Color</button>
+        <button id="btnBackground">Change Background Color</button>
+        <div class="box" id="box"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 CSS Transitions Example</p>
+    </footer>
+
+    <script>
+        // JavaScript for toggling CSS classes
+        const box = document.getElementById('box');
+        document.getElementById('btnColor').addEventListener('click', () => {
+            box.classList.toggle('color-change');
+        });
+        document.getElementById('btnBackground').addEventListener('click', () => {
+            box.classList.toggle('background-change');
+        });
+    </script>
+</body>
+</html>

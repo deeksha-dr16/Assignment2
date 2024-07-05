@@ -1,0 +1,91 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main section styles */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    background-color: #eaeaea;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox items */
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    flex: 1 1 30%;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* Order property */
+.order-1 { order: 1; }
+.order-2 { order: 2; }
+.order-3 { order: 3; }
+.order-4 { order: 4; }
+
+/* Nested flex container */
+.nested-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffeb3b;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    flex: 1 1 100%;
+}
+
+/* Nested flex items */
+.nested-item {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    flex: 1 1 45%;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}

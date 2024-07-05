@@ -1,0 +1,109 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Font family examples */
+.sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.serif {
+    font-family: 'Times New Roman', serif;
+}
+
+.monospace {
+    font-family: 'Courier New', monospace;
+}
+
+/* Font size examples */
+.small {
+    font-size: 12px;
+}
+
+.medium {
+    font-size: 16px;
+}
+
+.large {
+    font-size: 24px;
+}
+
+/* Font weight examples */
+.light {
+    font-weight: 300;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* Font style examples */
+.normal-style {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* Line height examples */
+.single {
+    line-height: 1;
+}
+
+.one-and-half {
+    line-height: 1.5;
+}
+
+.double {
+    line-height: 2;
+}
+
+/* Text transform examples */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}

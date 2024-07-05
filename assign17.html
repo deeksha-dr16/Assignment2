@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form Elements</title>
+    <link rel="stylesheet" href="assign17.css">
+</head>
+<body>
+    <h1>Styled Form Elements</h1>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" checked label for="male"> Male</label>
+            <br><br>
+            <input type="radio" id="female" name="gender" value="female" label for="female"> Female</label>
+            <br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="interests">Interests:</label><br>
+            <input type="checkbox" id="programming" name="interests[]" value="programming" 
+            label for="programming"> Programming</label><br><br>
+            <input type="checkbox" id="music" name="interests[]" value="music" 
+            label for="music"> Music</label><br><br>
+            <input type="checkbox" id="sports" name="interests[]" value="sports"
+            label for="sports"> Sports</label><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

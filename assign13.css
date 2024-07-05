@@ -1,0 +1,58 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px); 
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Box styles */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    margin-top: 20px;
+    transition-property: color, background-color, width, height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Transition effects */
+.color-change {
+    color: white;
+}
+
+.background-change {
+    background-color: #f44336;
+    width: 300px;
+    height: 300px;
+}

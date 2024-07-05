@@ -1,0 +1,45 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Responsive image styles */
+picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

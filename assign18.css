@@ -1,0 +1,87 @@
+:root {
+    /* Define CSS variables */
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --text-color: #333;
+    --font-size: 16px;
+    --spacing: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: var(--spacing);
+    font-size: var(--font-size);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: var(--spacing);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: var(--spacing);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: calc(var(--spacing) / 2);
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: calc(100% - var(--spacing) * 2);
+    padding: var(--spacing);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: var(--font-size);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: var(--spacing);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing) calc(var(--spacing) * 2);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+input:invalid,
+select:invalid {
+    border-color: var(--secondary-color);
+}
+
+input:valid,
+select:valid {
+    border-color: #2ecc71;
+}

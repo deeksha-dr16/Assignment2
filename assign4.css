@@ -1,0 +1,74 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Box model demonstration */
+.example {
+    width: 200px;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+.content-box-example {
+    box-sizing: content-box;
+    background-color: lightblue;
+    padding: 20px;
+    border: 5px solid blue;
+    margin: 10px;
+}
+
+.border-box-example {
+    box-sizing: border-box;
+    background-color: lightcoral;
+    padding: 20px;
+    border: 5px solid red;
+    margin: 10px;
+}
+
+/* Box properties demonstration */
+.padding-example {
+    background-color: lightgreen;
+    padding: 30px;
+}
+
+.border-example {
+    background-color: lightyellow;
+    border: 10px solid orange;
+}
+
+.margin-example {
+    background-color: lightpink;
+    margin: 30px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
